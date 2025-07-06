@@ -15,7 +15,7 @@ import WasteClassifier from './WasteClassifier.jsx';
 import CarbonCalculator from './CarbonCalculator.jsx';
 import CarbonResults from './CarbonResults.jsx';
 import Missions from './Missions.jsx';
-import EcoBot from './EcoBot.jsx';
+import EcoBot from './Ecobot.jsx';
 
 // --- IMPORT THE THREE MISSING POWER FEATURE COMPONENTS ---
 import MandiFinder from './MandiFinder.jsx';
