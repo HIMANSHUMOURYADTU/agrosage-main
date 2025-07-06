@@ -1,5 +1,5 @@
 import React, { createContext, useState, useContext, useEffect } from 'react';
-import { getDashboardData } from '../api/api';
+import { getDashboardData } from './api.js';
 
 const AppStateContext = createContext();
 
