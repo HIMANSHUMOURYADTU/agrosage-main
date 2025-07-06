@@ -5,11 +5,11 @@ import { NavLink, useLocation } from 'react-router-dom';
 import { FaThLarge, FaBug, FaRecycle, FaCalculator, FaFlagCheckered } from 'react-icons/fa';
 
 const navItems = [
-    { to: "/", icon: <FaThLarge />, label: "Dashboard" },
-    { to: "/pest-scanner", icon: <FaBug />, label: "Pest Scan" },
-    { to: "/waste-classifier", icon: <FaRecycle />, label: "Waste Scan" },
-    { to: "/carbon-calculator", icon: <FaCalculator />, label: "Carbon" },
-    { to: "/missions", icon: <FaFlagCheckered />, label: "Missions" }
+    { to: "./", icon: <FaThLarge />, label: "Dashboard" },
+    { to: "./pest-scanner", icon: <FaBug />, label: "Pest Scan" },
+    { to: "./waste-classifier", icon: <FaRecycle />, label: "Waste Scan" },
+    { to: "./carbon-calculator", icon: <FaCalculator />, label: "Carbon" },
+    { to: "./missions", icon: <FaFlagCheckered />, label: "Missions" }
 ];
 
 const BottomNav = () => {
