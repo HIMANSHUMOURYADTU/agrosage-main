@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Container, Button, Spinner, Alert } from 'react-bootstrap';
 import { toast } from 'react-toastify';
 import Skeleton from 'react-loading-skeleton';
-import { getMissions, completeMission } from '../api/api';
+import { getMissions, completeMission } from './api.js';
 import { FaFlagCheckered, FaCheckCircle } from 'react-icons/fa';
 
 const Missions = () => {
