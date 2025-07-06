@@ -3,16 +3,16 @@ import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import { ToastContainer } from 'react-toastify';
 
-import AnimatedBackground from '/AnimatedBackground';
-import { useAppState } from '/ThemeContext.jsx';
-import Layout from '/Layout.jsx';
-import Dashboard from '/Dashboard.jsx';
-import PestScanner from '/PestScanner.jsx';
-import WasteClassifier from '/WasteClassifier.jsx';
-import CarbonCalculator from '/CarbonCalculator.jsx';
-import CarbonResults from '/CarbonResults.jsx';
-import Missions from '/Missions.jsx';
-import EcoBot from '/EcoBot.jsx';
+import AnimatedBackground from './AnimatedBackground';
+import { useAppState } from './ThemeContext.jsx';
+import Layout from './Layout.jsx';
+import Dashboard from './Dashboard.jsx';
+import PestScanner from './PestScanner.jsx';
+import WasteClassifier from './WasteClassifier.jsx';
+import CarbonCalculator from './CarbonCalculator.jsx';
+import CarbonResults from './CarbonResults.jsx';
+import Missions from './Missions.jsx';
+import EcoBot from './EcoBot.jsx';
 
 function App() {
   const location = useLocation();
