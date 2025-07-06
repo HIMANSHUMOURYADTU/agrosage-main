@@ -14,7 +14,7 @@ import { AppStateProvider } from './ThemeContext.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-toastify/dist/ReactToastify.css';
 import 'react-loading-skeleton/dist/skeleton.css';
-import './styles/App.css'; // Your custom, "next-level" stylesheet
+import './App.css'; // Your custom, "next-level" stylesheet
 
 // --- 3. RENDER THE APPLICATION ---
 ReactDOM.createRoot(document.getElementById('root')).render(
