@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Container, Form, Button, Spinner, InputGroup } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { askEcoBot } from '../api/api';
+import { askEcoBot } from './api.js';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const EcoBot = () => {
