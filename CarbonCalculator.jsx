@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Container, Form, Button, Spinner, Alert } from 'react-bootstrap';
 import { toast } from 'react-toastify';
-import { calculateCarbon } from '../api/api';
+import { calculateCarbon } from './api.js';
 import { FaTractor } from 'react-icons/fa';
 import { GiPlantSeed } from 'react-icons/gi';
 
