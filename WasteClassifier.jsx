@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { Container, Alert, ListGroup } from 'react-bootstrap';
 import { motion, AnimatePresence } from 'framer-motion';
 import Skeleton from 'react-loading-skeleton';
-import { classifyWaste } from '../api/api';
+import { classifyWaste } from './api.js';
 import { FaTrashAlt, FaRecycle } from 'react-icons/fa';
 
 const WasteClassifier = () => {
