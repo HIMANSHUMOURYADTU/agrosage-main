@@ -7,14 +7,14 @@ import App from './App.jsx';
 
 // --- 1. IMPORT THE NEW GLOBAL STATE PROVIDER ---
 // This provider will manage the theme and sustainability score for the whole app.
-import { AppStateProvider } from '/ThemeContext.jsx';
+import { AppStateProvider } from './context/ThemeContext.jsx';
 
 // --- 2. IMPORT ALL NECESSARY CSS FILES ---
 // It's crucial that these are imported here in the main entry point.
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-toastify/dist/ReactToastify.css';
 import 'react-loading-skeleton/dist/skeleton.css';
-import '/App.css'; // Your custom, "next-level" stylesheet
+import './styles/App.css'; // Your custom, "next-level" stylesheet
 
 // --- 3. RENDER THE APPLICATION ---
 ReactDOM.createRoot(document.getElementById('root')).render(
