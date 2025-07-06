@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { Container, Alert } from 'react-bootstrap';
 import { motion, AnimatePresence } from 'framer-motion';
 import Skeleton from 'react-loading-skeleton';
-import { scanPest } from '../api/api';
+import { scanPest } from './api.js';
 import { FaCamera, FaNotesMedical } from 'react-icons/fa';
 
 const PestScanner = () => {
