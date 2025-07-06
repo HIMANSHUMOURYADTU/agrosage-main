@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Alert } from 'react-bootstrap';
 import { motion, AnimatePresence } from 'framer-motion';
 import Skeleton from 'react-loading-skeleton';
-import { getDashboardData } from '../api/api';
+import { getDashboardData } from './api.js';
 import CountUp from 'react-countup';
 
 // --- CORRECTED ICON IMPORTS ---
