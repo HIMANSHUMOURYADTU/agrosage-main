@@ -12,7 +12,7 @@ import WasteClassifier from './WasteClassifier.jsx';
 import CarbonCalculator from './CarbonCalculator.jsx';
 import CarbonResults from './CarbonResults.jsx';
 import Missions from './Missions.jsx';
-import EcoBot from './EcoBot.jsx';
+import EcoBot from './Ecobot.jsx';
 
 function App() {
   const location = useLocation();
