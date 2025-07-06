@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { useAppState } from '../context/ThemeContext';
+import { useAppState } from '/ThemeContext';
 
 const AnimatedBackground = () => {
     // Get the live sustainability score from our global context
