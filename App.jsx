@@ -1,0 +1,42 @@
+import React from 'react';
+import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
+import { ToastContainer } from 'react-toastify';
+
+import AnimatedBackground from './components/AnimatedBackground';
+import { useAppState } from './context/ThemeContext.jsx';
+import Layout from './components/Layout.jsx';
+import Dashboard from './components/Dashboard.jsx';
+import PestScanner from './components/PestScanner.jsx';
+import WasteClassifier from './components/WasteClassifier.jsx';
+import CarbonCalculator from './components/CarbonCalculator.jsx';
+import CarbonResults from './components/CarbonResults.jsx';
+import Missions from './components/Missions.jsx';
+import EcoBot from './components/EcoBot.jsx';
+
+function App() {
+  const location = useLocation();
+  const { theme } = useAppState();
+
+  return (
+    <>
+      <AnimatedBackground />
+      <AnimatePresence mode="popLayout">
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Dashboard />} />
+            <Route path="pest-scanner" element={<PestScanner />} />
+            <Route path="waste-classifier" element={<WasteClassifier />} />
+            <Route path="carbon-calculator" element={<CarbonCalculator />} />
+            <Route path="carbon-results" element={<CarbonResults />} />
+            <Route path="missions" element={<Missions />} />
+          </Route>
+          <Route path="/ecobot" element={<EcoBot />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </AnimatePresence>
+      <ToastContainer position="bottom-center" autoClose={3000} hideProgressBar theme={theme} />
+    </>
+  );
+}
+export default App;

@@ -1,0 +1,10 @@
+import axios from 'axios';
+const API_BASE_URL = 'https://agrosage-backend-4.onrender.com/';
+const apiClient = axios.create({ baseURL: API_BASE_URL });
+export const getDashboardData = () => apiClient.get('/dashboard-data');
+export const getMissions = () => apiClient.get('/missions');
+export const completeMission = (missionId) => apiClient.post(`/complete-mission/${missionId}`);
+export const scanPest = (formData) => apiClient.post('/scan-pest', formData, { headers: { 'Content-Type': 'multipart/form-data' } });
+export const classifyWaste = (formData) => apiClient.post('/classify-waste', formData, { headers: { 'Content-Type': 'multipart/form-data' } });
+export const askEcoBot = (query) => apiClient.post('/ask-ecobot', { query });
+export const calculateCarbon = (inputs) => apiClient.post('/calculate-carbon', inputs);
