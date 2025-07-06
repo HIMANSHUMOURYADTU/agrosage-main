@@ -7,7 +7,7 @@ import App from './App.jsx';
 
 // --- 1. IMPORT THE NEW GLOBAL STATE PROVIDER ---
 // This provider will manage the theme and sustainability score for the whole app.
-import { AppStateProvider } from './context/ThemeContext.jsx';
+import { AppStateProvider } from './ThemeContext.jsx';
 
 // --- 2. IMPORT ALL NECESSARY CSS FILES ---
 // It's crucial that these are imported here in the main entry point.
