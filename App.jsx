@@ -6,21 +6,21 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { ToastContainer } from 'react-toastify';
 
 // --- Import all necessary providers and components ---
-import { useAppState } from './context/ThemeContext.jsx';
-import AnimatedBackground from './components/AnimatedBackground.jsx';
-import Layout from './components/Layout.jsx';
-import Dashboard from './components/Dashboard.jsx';
-import PestScanner from './components/PestScanner.jsx';
-import WasteClassifier from './components/WasteClassifier.jsx';
-import CarbonCalculator from './components/CarbonCalculator.jsx';
-import CarbonResults from './components/CarbonResults.jsx';
-import Missions from './components/Missions.jsx';
-import EcoBot from './components/EcoBot.jsx';
+import { useAppState } from './ThemeContext.jsx';
+import AnimatedBackground from './AnimatedBackground.jsx';
+import Layout from './Layout.jsx';
+import Dashboard from './Dashboard.jsx';
+import PestScanner from './PestScanner.jsx';
+import WasteClassifier from './WasteClassifier.jsx';
+import CarbonCalculator from './CarbonCalculator.jsx';
+import CarbonResults from './CarbonResults.jsx';
+import Missions from './Missions.jsx';
+import EcoBot from './EcoBot.jsx';
 
 // --- IMPORT THE THREE MISSING POWER FEATURE COMPONENTS ---
-import MandiFinder from './components/MandiFinder.jsx';
-import Logistics from './components/Logistics.jsx';
-import Traceability from './components/Traceability.jsx';
+import MandiFinder from './MandiFinder.jsx';
+import Logistics from './Logistics.jsx';
+import Traceability from './Traceability.jsx';
 
 // Page transition animation variants
 const pageVariants = {
