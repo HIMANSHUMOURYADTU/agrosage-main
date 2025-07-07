@@ -9,9 +9,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 // --- THE GUARANTEED FIX: "STAR" IMPORT ---
 // This imports the entire module as a single object named 'QRCodeReact'
-import * as QRCodeReact from 'qrcode.react';
+import { QRCodeCanvas } from 'qrcode.react';
 // The actual component we need is inside this object, usually named 'default'
-const QRCode = QRCodeReact.default;
+// const QRCode = QRCodeReact.default;
 
 
 const Traceability = () => {
@@ -63,7 +63,7 @@ const Traceability = () => {
                     <p className="text-muted">Batch ID: <strong>{batchId}</strong></p>
                     <div className="bg-white p-3 d-inline-block rounded shadow-lg">
                         {/* The QRCode component will now be correctly defined */}
-                        {QRCode && <QRCode value={qrValue} size={180} level={"H"} includeMargin={true} />}
+                       <QRCodeCanvas value={qrValue} size={180} level={"H"} includeMargin={true} />
                     </div>
                     <p className="mt-3 text-muted">Print this QR code and attach it to your produce batch.</p>
                 </motion.div>
