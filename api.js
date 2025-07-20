@@ -1,5 +1,5 @@
 import axios from 'axios';
-const API_BASE_URL = 'https://agrosage-backend-4.onrender.com/';
+const API_BASE_URL = 'https://agrosage-backend.onrender.com';
 const apiClient = axios.create({ baseURL: API_BASE_URL });
 export const getDashboardData = () => apiClient.get('/dashboard-data');
 export const getMissions = () => apiClient.get('/missions');
